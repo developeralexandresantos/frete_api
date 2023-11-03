@@ -2,6 +2,7 @@ package br.com.developeralexandresantos.Frete.API.main;
 
 import br.com.developeralexandresantos.Frete.API.application.gateways.RemetenteGateway;
 import br.com.developeralexandresantos.Frete.API.application.usecases.CreateRemetenteInteractor;
+import br.com.developeralexandresantos.Frete.API.application.usecases.ListRemetenteInteractor;
 import br.com.developeralexandresantos.Frete.API.infrastructure.controllers.RemetenteDTOMapper;
 import br.com.developeralexandresantos.Frete.API.infrastructure.gateways.RemetenteEntityMapper;
 import br.com.developeralexandresantos.Frete.API.infrastructure.gateways.RemetenteRepositoryGateway;
@@ -15,6 +16,11 @@ public class RemetenteConfig {
     @Bean
     CreateRemetenteInteractor createRemetenteCase(RemetenteGateway remetenteGateway){
         return new CreateRemetenteInteractor(remetenteGateway);
+    }
+
+    @Bean
+    ListRemetenteInteractor listRemetenteInteractor(RemetenteGateway remetenteGateway) {
+        return new ListRemetenteInteractor(remetenteGateway);
     }
 
     @Bean
