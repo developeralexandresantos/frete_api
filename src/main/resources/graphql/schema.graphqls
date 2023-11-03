@@ -1,0 +1,26 @@
+type Remetente {
+    id: ID!
+    nome: String!
+    endereco: String!
+}
+
+type CreateRemetenteResponse {
+    nome: String!
+    endereco: String!
+}
+
+input CreateRemetenteRequest {
+    id: ID
+    nome: String!
+    endereco: String!
+}
+
+type Query{
+    remetente(id:ID!):Remetente!
+
+    getAllRemetentes:[Remetente!]
+}
+
+type Mutation {
+    createRemetente(request:CreateRemetenteRequest!):CreateRemetenteResponse
+}
