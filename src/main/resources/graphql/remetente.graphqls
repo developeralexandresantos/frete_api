@@ -15,10 +15,10 @@ input CreateRemetenteRequest {
     endereco: String!
 }
 
-type Query{
-    remetente(id:ID!):Remetente!
+type Query {
+remetente(id:ID!):Remetente!
 
-    getAllRemetentes:[Remetente!]
+getAllRemetentes:[Remetente!]
 }
 
 type Mutation {

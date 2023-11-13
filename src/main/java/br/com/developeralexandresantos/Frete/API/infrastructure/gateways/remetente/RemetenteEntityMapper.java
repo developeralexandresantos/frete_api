@@ -1,9 +1,8 @@
-package br.com.developeralexandresantos.Frete.API.infrastructure.gateways;
+package br.com.developeralexandresantos.Frete.API.infrastructure.gateways.remetente;
 
 import br.com.developeralexandresantos.Frete.API.domain.entity.Remetente;
-import br.com.developeralexandresantos.Frete.API.infrastructure.persistence.RemetenteEntity;
+import br.com.developeralexandresantos.Frete.API.infrastructure.persistence.remetente.RemetenteEntity;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;

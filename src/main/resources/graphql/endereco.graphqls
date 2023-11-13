@@ -1,0 +1,27 @@
+type Endereco {
+    id: ID!
+    logradouro: String!
+    remetenteId: ID!
+}
+
+type CreateEnderecoResponse {
+    id: ID
+    logradouro: String!
+    remetenteId: ID!
+}
+
+input CreateEnderecoRequest {
+    id: ID
+    nome: String!
+    endereco: String!
+}
+
+extend type Query {
+endereco(id:ID!):Endereco!
+
+getAllEnderecos:[Endereco!]
+}
+
+extend type Mutation {
+    createEndereco(request:CreateEnderecoRequest!):CreateEnderecoResponse
+}

@@ -1,4 +1,4 @@
-package br.com.developeralexandresantos.Frete.API.application.usecases;
+package br.com.developeralexandresantos.Frete.API.application.usecases.remetente;
 
 import br.com.developeralexandresantos.Frete.API.application.gateways.RemetenteGateway;
 import br.com.developeralexandresantos.Frete.API.domain.entity.Remetente;

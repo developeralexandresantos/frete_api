@@ -1,4 +1,4 @@
-package br.com.developeralexandresantos.Frete.API.infrastructure.persistence;
+package br.com.developeralexandresantos.Frete.API.infrastructure.persistence.remetente;
 
 import jakarta.persistence.*;
 import lombok.Data;

@@ -1,7 +1,7 @@
-package br.com.developeralexandresantos.Frete.API.infrastructure.controllers;
+package br.com.developeralexandresantos.Frete.API.infrastructure.controllers.remetente;
 
-import br.com.developeralexandresantos.Frete.API.application.usecases.CreateRemetenteInteractor;
-import br.com.developeralexandresantos.Frete.API.application.usecases.ListRemetenteInteractor;
+import br.com.developeralexandresantos.Frete.API.application.usecases.remetente.CreateRemetenteInteractor;
+import br.com.developeralexandresantos.Frete.API.application.usecases.remetente.ListRemetenteInteractor;
 import br.com.developeralexandresantos.Frete.API.domain.entity.Remetente;
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.MutationMapping;

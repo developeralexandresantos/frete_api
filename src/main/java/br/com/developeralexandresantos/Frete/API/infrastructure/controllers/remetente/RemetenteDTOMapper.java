@@ -1,4 +1,4 @@
-package br.com.developeralexandresantos.Frete.API.infrastructure.controllers;
+package br.com.developeralexandresantos.Frete.API.infrastructure.controllers.remetente;
 
 import br.com.developeralexandresantos.Frete.API.domain.entity.Remetente;
 
