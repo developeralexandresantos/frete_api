@@ -1,5 +1,6 @@
 package br.com.developeralexandresantos.Frete.API.infrastructure.persistence.remetente;
 
+import br.com.developeralexandresantos.Frete.API.infrastructure.persistence.endereco.EnderecoEntity;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -11,9 +12,12 @@ public class RemetenteEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;
-    private String endereco;
 
-    public RemetenteEntity(String nome, String endereco) {
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "endereco_id")
+    private EnderecoEntity endereco;
+
+    public RemetenteEntity(String nome, EnderecoEntity endereco) {
         this.nome = nome;
         this.endereco = endereco;
     }

@@ -1,4 +1,6 @@
 package br.com.developeralexandresantos.Frete.API.domain.entity;
 
-public record Remetente (Long id, String nome, String endereco){
+import br.com.developeralexandresantos.Frete.API.infrastructure.persistence.endereco.EnderecoEntity;
+
+public record Remetente (Long id, String nome, EnderecoEntity endereco){
 }
